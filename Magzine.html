@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Cover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Playfair+Display:wght@400;700&family=Lobster&family=Montserrat:wght@300;700&family=Dancing+Script:wght@400;700&family=Pacifico&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d2b48c;
+        }
+        .magazine-cover {
+            position: relative;
+            width: 530px;
+            height: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 20px;
+            overflow: hidden;
+            background: url('https://www.worldanimalprotection.org.uk/cdn-cgi/image/width=800,format=auto,fit=cover/globalassets/images/elephants/1033551-elephant.jpg') no-repeat center/cover;
+        }
+        .title {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #f4e3d7;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .headline, .additional-headline {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: transform 0.3s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .headline {
+            position: absolute;
+            bottom: 180px;
+            left: 20px;
+            color: #ffd700;
+        }
+        .headline:hover, .additional-headline:hover {
+            transform: scale(1.1);
+        }
+        .caption, .additional-caption {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1rem;
+            opacity: 0.9;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .caption {
+            position: absolute;
+            bottom: 150px;
+            left: 20px;
+            color: #fffacd;
+        }
+        .additional-headline {
+            position: absolute;
+            bottom: 110px;
+            right: 20px;
+            color: #00ff00;
+            font-size: 1.3rem;
+        }
+        .additional-caption {
+            position: absolute;
+            bottom: 85px;
+            right: 20px;
+            color: #ffebcd;
+        }
+        .subscribe {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: #ff4500;
+            color: white;
+            padding: 8px 16px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Cinzel', serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        .subscribe:hover {
+            background: #b22222;
+        }
+    </style>
+</head>
+<body>
+    <div class="magazine-cover">
+        <div class="title">Wildlife Wonders</div>
+        <div class="headline">The Majesty of Elephants</div>
+        <div class="caption">Understanding their role in the ecosystem</div>
+        <div class="additional-headline">Conservation Efforts 2024</div>
+        <div class="additional-caption">How we can protect these gentle giants</div>
+        <button class="subscribe">Subscribe Now</button>
+    </div>
+</body>
+</html>
